@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel de Defesa — Glaucio Aurelio Adami</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#17212b;--muted:#5d6b78;--line:#d9e0e6;--blue:#234a70;--blue2:#e9f1f8;--amber:#fff4d8;--red:#fff0ef;--green:#eaf6ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:#17334d;color:white;padding:24px max(20px,calc((100vw - 1200px)/2))}
+header h1{margin:0 0 5px;font-size:24px}header p{margin:0;color:#dce8f1}
+main{max-width:1200px;margin:22px auto;padding:0 18px 50px}
+.notice{background:var(--amber);border:1px solid #ead7a3;padding:13px 15px;border-radius:10px;margin-bottom:16px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+button,.btn{border:0;border-radius:8px;background:var(--blue);color:white;padding:9px 13px;font:inherit;cursor:pointer}
+button.secondary,.btn.secondary{background:#e8edf2;color:#1d2b38}button.danger{background:#a43d38}
+.tab[aria-selected=true]{background:var(--blue);color:white}.tab{background:#e8edf2;color:#1d2b38}
+.panel{display:none}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px;margin:12px 0;box-shadow:0 1px 2px #1020300a}
+h2{font-size:19px;margin:0 0 12px}h3{font-size:16px;margin:14px 0 7px}
+.small,.muted{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+label{display:block;font-weight:600;margin:8px 0 4px}input,select,textarea{width:100%;border:1px solid #bdc8d2;border-radius:8px;padding:9px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+.drop{border:2px dashed #9eafbd;border-radius:12px;padding:24px;text-align:center;background:#f9fbfc}
+.drop.drag{background:var(--blue2);border-color:var(--blue)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid var(--line);padding:8px;vertical-align:top;text-align:left}th{background:#edf2f6}
+td[contenteditable=true]{background:#fffef7;min-width:110px}
+.tag{display:inline-block;padding:2px 7px;border-radius:20px;background:var(--blue2);font-size:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.row>*{flex:0 0 auto}
+.file{padding:9px;border:1px solid var(--line);border-radius:8px;margin:7px 0;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.file span{overflow-wrap:anywhere}.file button{padding:5px 8px}
+.chatlog{height:270px;overflow:auto;background:#f8fafb;border:1px solid var(--line);padding:12px;border-radius:9px}
+.msg{padding:9px 11px;margin:8px 0;border-radius:9px;background:#eaf1f7;white-space:pre-wrap}.msg.client{background:#f0f2f4}
+footer{color:var(--muted);font-size:12px;text-align:center;margin:24px}
+@media(max-width:650px){header h1{font-size:20px}table{display:block;overflow-x:auto;white-space:normal}}
+</style>
+</head>
+<body>
+<header><h1>Painel de organização da defesa</h1><p>Processo nº 1011701-70.2026.8.13.0525/MG · Glaucio Aurelio Adami</p></header>
+<main>
+<div class="notice"><b>Uso reservado e cuidado jurídico:</b> este painel é uma ferramenta de organização, não substitui advogado nem constitui parecer ou peça pronta. As alegações da petição não são fatos comprovados. Respeite integralmente as medidas judiciais vigentes. Os arquivos selecionados ficam somente neste navegador; não são enviados automaticamente ao ChatGPT, a um advogado ou a um servidor.</div>
+<nav class="tabs" aria-label="Seções">
+<button class="tab" aria-selected="true" data-tab="visao">Visão geral</button>
+<button class="tab" aria-selected="false" data-tab="docs">Documentos</button>
+<button class="tab" aria-selected="false" data-tab="quadro">Quadro de provas</button>
+<button class="tab" aria-selected="false" data-tab="entrevista">Conversa com cliente</button>
+<button class="tab" aria-selected="false" data-tab="defesa">Estrutura da defesa</button>
+<button class="tab" aria-selected="false" data-tab="salvar">Salvar / exportar</button>
+</nav>
+
+<section id="visao" class="panel active">
+<div class="card"><h2>Escopo do material conhecido</h2>
+<p>O parecer preliminar disponível registra que foram examinadas seis páginas/documentos iniciais, e que outros anexos citados (BOs, prontuários, relatórios escolares e psicológicos, sentença, termo de guarda e Conselho Tutelar) não integravam aquele conjunto examinado. Há também um mandado de citação/intimação e página de redistribuição entre os arquivos atuais.</p>
+<p><b>Limitação:</b> os documentos enviados em outro chat não ficam automaticamente acessíveis neste painel. Anexe-os na seção “Documentos” para reuni-los aqui e permitir uma revisão posterior.</p></div>
+<div class="grid">
+<div class="card"><h3>Medidas comunicadas no mandado</h3><p>Distância mínima de 100 metros das crianças; proibição de retirá-las dos estabelecimentos indicados; suspensão provisória de contatos telefônicos e virtuais.</p><p class="small">Confirmar decisão integral e eventuais decisões posteriores.</p></div>
+<div class="card"><h3>Prazo indicado</h3><p>O mandado informa 10 dias para resposta/contestação, contados da data efetiva da citação.</p><p class="small">A emissão em 29/10/2026 não comprova a data de cumprimento. Conferir certidão e cálculo com advogado imediatamente.</p></div>
+<div class="card"><h3>Ponto que exige apuração prioritária</h3><p>Episódio narrado em 02/07/2026 na escola de futebol, com menção a acionamento da PM e dos Bombeiros.</p><p class="small">Obter BO integral, registros de atendimento, imagens e testemunhas. Não presumir veracidade nem falsidade.</p></div>
+</div>
+<div class="card"><h2>Checklist inicial</h2><div id="checks">
+<label><input type="checkbox"> Confirmar data da citação e prazo processual.</label>
+<label><input type="checkbox"> Obter íntegra dos autos e decisões atualizadas.</label>
+<label><input type="checkbox"> Reunir BOs, registros policiais e documentos médicos pertinentes.</label>
+<label><input type="checkbox"> Reunir relatórios psicológicos, escolares e Conselho Tutelar integrais.</label>
+<label><input type="checkbox"> Preservar mensagens e arquivos originais, sem editar ou apagar.</label>
+<label><input type="checkbox"> Não contatar crianças/genitora sobre o processo nem pedir versões.</label>
+</div></div>
+</section>
+
+<section id="docs" class="panel">
+<div class="card"><h2>Adicionar documentos</h2><p>Selecione vários arquivos de uma vez ou arraste-os para a área abaixo. Aceita PDF, imagens, DOC/DOCX, TXT e outros formatos. O navegador mantém os arquivos em memória enquanto a página estiver aberta.</p>
+<div class="drop" id="drop"><b>Arraste os documentos aqui</b><p class="muted">ou</p><input id="fileInput" type="file" multiple></div>
+<div class="row" style="margin-top:12px"><button id="clearFiles" class="danger">Remover todos os arquivos da lista</button><span id="fileCount" class="muted">Nenhum arquivo adicionado</span></div>
+<div id="fileList"></div>
+<p class="small">Para levar os arquivos junto ao trabalho, use “Salvar / exportar” e exporte o pacote do projeto. Arquivos grandes podem gerar um pacote JSON grande. A seleção local não transmite os documentos para análise remota.</p>
+</div>
+<div class="card"><h2>Identificação e notas de cada documento</h2><p class="muted">Registre a origem, a data, a página e o que precisa ser conferido. Não inclua dados sensíveis desnecessários.</p>
+<div class="grid"><div><label>Nome/identificação</label><input id="docName" placeholder="Ex.: BO de 02/07/2026"></div><div><label>Categoria</label><select id="docCat"><option>Peça processual</option><option>Registro técnico</option><option>Registro oficial/documental</option><option>Relato reproduzido</option><option>Prova digital</option><option>Decisão/ato judicial</option><option>Outro / a classificar</option></select></div><div><label>Data do documento</label><input id="docDate" type="date"></div></div>
+<label>O que o documento efetivamente registra?</label><textarea id="docFact" placeholder="Separar observação direta, declaração e conclusão técnica."></textarea>
+<label>Limitações, dúvidas e diligências necessárias</label><textarea id="docNeed" placeholder="Ex.: solicitar íntegra, identificar declarante, confirmar autoria, metadados ou assinatura."></textarea>
+<button id="addRecord">Adicionar ao quadro</button>
+<div id="recordList"></div>
+</div>
+</section>
+
+<section id="quadro" class="panel">
+<div class="card"><h2>Quadro consolidado e editável</h2><p class="muted">Clique nas células para editar. Use os registros cadastrados em Documentos e complemente conforme os originais forem conferidos.</p>
+<div class="row"><button id="addRow">Adicionar linha</button><button class="secondary" id="csv">Exportar quadro CSV</button></div>
+<div style="overflow-x:auto;margin-top:12px"><table id="evidence"><thead><tr><th>Documento / data</th><th>Categoria</th><th>Conteúdo / fato registrado</th><th>O que pode demonstrar</th><th>Limite / dúvida</th><th>Providência defensiva</th></tr></thead><tbody>
+<tr><td contenteditable="true">Petição inicial</td><td contenteditable="true">Peça processual / alegações</td><td contenteditable="true">Narrativa e pedidos da requerente.</td><td contenteditable="true">Quais alegações foram formuladas.</td><td contenteditable="true">Não comprova por si só a veracidade dos fatos.</td><td contenteditable="true">Responder cada alegação e conferir os anexos citados.</td></tr>
+<tr><td contenteditable="true">Relatórios psicológicos (03/09/2026, conforme parecer)</td><td contenteditable="true">Técnico + relatos</td><td contenteditable="true">Atendimento, observações e declarações registradas.</td><td contenteditable="true">Acompanhamento e observações efetivamente feitas.</td><td contenteditable="true">Separar observação profissional de fala da criança/terceiros; não equivale automaticamente a perícia judicial.</td><td contenteditable="true">Obter íntegra, metodologia, fontes e finalidade; avaliar estudo psicossocial judicial.</td></tr>
+<tr><td contenteditable="true">BO de 02/07/2026 (nº citado no parecer)</td><td contenteditable="true">Registro oficial + relato</td><td contenteditable="true">Comunicação do episódio na escola de futebol.</td><td contenteditable="true">Que houve comunicação e quais providências foram registradas.</td><td contenteditable="true">Não confirma sozinho todos os fatos narrados.</td><td contenteditable="true">Obter inteiro teor, registros PM/Bombeiros, imagens e testemunhas.</td></tr>
+<tr><td contenteditable="true">Termo do Conselho Tutelar (09/10/2026)</td><td contenteditable="true">Registro administrativo + relatos</td><td contenteditable="true">Atendimento, encaminhamentos e providências.</td><td contenteditable="true">Atos efetivamente praticados e fontes documentadas.</td><td contenteditable="true">Declarações recebidas não se tornam automaticamente fatos comprovados.</td><td contenteditable="true">Solicitar procedimento integral e identificar a origem de cada informação.</td></tr>
+<tr><td contenteditable="true">Prontuário / ficha de internação (18/12/2025, conforme petição)</td><td contenteditable="true">Técnico-médico</td><td contenteditable="true">Atendimento, avaliação e circunstâncias registradas.</td><td contenteditable="true">Atendimento e achados médicos documentados.</td><td contenteditable="true">Não prova isoladamente violência, incapacidade parental ou risco atual.</td><td contenteditable="true">Obter documentação pertinente e atualizada, sob sigilo.</td></tr>
+<tr><td contenteditable="true">Mandado nº 11460548 (29/10/2026)</td><td contenteditable="true">Ato judicial</td><td contenteditable="true">Comunica medidas e prazo de 10 dias desde a citação.</td><td contenteditable="true">Conteúdo comunicado pelo mandado.</td><td contenteditable="true">Data de emissão não é a data de citação efetiva.</td><td contenteditable="true">Obter certidão do oficial e conferir prazo com advogado.</td></tr>
+</tbody></table></div>
+</div>
+</section>
+
+<section id="entrevista" class="panel">
+<div class="card"><h2>Roteiro de conversa com o cliente</h2><p>Registre respostas factuais, sem induzir respostas, pressionar testemunhas ou pedir contato com as crianças. Marque o que é lembrança, documento ou informação de terceiro.</p>
+<div class="grid"><div><label>Assunto</label><select id="topic"><option>Cronologia dos fatos</option><option>02/07/2026 — escola de futebol</option><option>Mensagens e comunicações</option><option>Atendimentos médicos</option><option>Escola e Conselho Tutelar</option><option>Guarda e convivência</option><option>Medidas judiciais e citação</option><option>Testemunhas e documentos</option></select></div><div><label>Fonte da informação</label><select id="source"><option>Memória direta do cliente</option><option>Documento original</option><option>Informação de terceiro</option><option>Não sabe / precisa confirmar</option></select></div></div>
+<label>Pergunta / ponto a esclarecer</label><textarea id="question" placeholder="Ex.: Onde estava, em que horário e quais registros independentes existem?"></textarea>
+<label>Resposta do cliente (registrar literalmente quando relevante)</label><textarea id="answer"></textarea>
+<label>Documento ou pessoa que pode confirmar</label><input id="corroboration" placeholder="Nome do arquivo, órgão, testemunha (sem combinar versões)">
+<button id="addInterview">Registrar resposta</button>
+<div id="interviews"></div></div>
+<div class="card"><h2>Notas da reunião</h2><textarea id="meetingNotes" placeholder="Anotações livres, dúvidas para o advogado e próximos passos."></textarea></div>
+</section>
+
+<section id="defesa" class="panel">
+<div class="card"><h2>Estrutura de trabalho para a defesa</h2><p class="muted">Rascunho organizacional. Não protocolar sem revisão e assinatura de advogado.</p>
+<div class="grid">
+<div><label>Versão factual do cliente</label><textarea id="clientVersion" placeholder="Registrar a versão do cliente, com datas e sem adjetivações."></textarea></div>
+<div><label>Fatos admitidos / incontroversos</label><textarea id="admitted" placeholder="Separar o que o cliente confirma do que contesta."></textarea></div>
+<div><label>Fatos controvertidos</label><textarea id="disputed" placeholder="Relacionar cada alegação e a resposta específica."></textarea></div>
+<div><label>Provas favoráveis e desfavoráveis</label><textarea id="proofs" placeholder="Incluir também provas que possam prejudicar a tese; avaliar com transparência."></textarea></div>
+<div><label>Pedidos de prova/diligências</label><textarea id="requests" placeholder="Ex.: acesso a anexos, registros originais, perícia técnica, estudo psicossocial."></textarea></div>
+<div><label>Pedidos jurídicos a avaliar com advogado</label><textarea id="legalRequests" placeholder="Ex.: reavaliação fundamentada das medidas; convivência assistida apenas se tecnicamente segura."></textarea></div>
+</div>
+</div>
+<div class="card"><h2>Texto-base para revisão profissional</h2><textarea id="draft" style="min-height:220px">DA ANÁLISE INDIVIDUALIZADA DOS ELEMENTOS DOCUMENTAIS
+
+A defesa requer que cada documento seja examinado conforme sua origem, finalidade, autoria, integridade e conteúdo. É necessário distinguir observações diretas de declarações reproduzidas e de conclusões técnicas, sem presumir que o registro de uma comunicação comprove automaticamente todos os fatos narrados.
+
+Requer-se acesso integral aos documentos mencionados na petição, inclusive anexos e registros originais, para permitir impugnação específica e exercício do contraditório. Eventuais avaliações técnicas devem observar metodologia adequada, proteção das crianças e prevenção de revitimização.
+
+Qualquer reavaliação das medidas vigentes deverá ser fundamentada em elementos concretos e atuais, sem prejuízo do cumprimento integral das ordens judiciais até que sejam formalmente modificadas.</textarea>
+<button id="copyDraft">Copiar texto-base</button></div>
+</section>
+
+<section id="salvar" class="panel">
+<div class="card"><h2>Salvar e transportar o trabalho</h2><p>O projeto reúne quadro, notas da entrevista, campos da defesa e os arquivos que você adicionou. Exporte um pacote para guardar uma cópia ou importar em outro computador.</p>
+<div class="row"><button id="exportProject">Exportar projeto completo (JSON)</button><button class="secondary" id="exportNoFiles">Exportar projeto sem arquivos</button></div>
+<label class="btn secondary" style="display:inline-block;margin-top:14px">Importar projeto JSON <input id="importProject" type="file" accept=".json,application/json" style="display:none"></label>
+<p id="saveStatus" class="muted"></p>
+</div>
+<div class="card"><h2>Limites técnicos e privacidade</h2><ul>
+<li>Este é um arquivo HTML local: não possui servidor, autenticação, criptografia ou envio remoto.</li>
+<li>Selecionar um arquivo apenas o disponibiliza nesta sessão do navegador; para conservar os arquivos no projeto, exporte o JSON completo.</li>
+<li>Não compartilhe o JSON completo por canal inseguro: ele pode conter documentos pessoais e dados sensíveis.</li>
+<li>Para enviar documentos ao ChatGPT ou ao advogado, use o canal oficial e autorizado, fora deste painel.</li>
+<li>O painel não calcula prazos processuais nem valida autenticidade, assinatura ou conteúdo dos documentos.</li>
+</ul></div>
+</section>
+<footer>Ferramenta local de organização documental · Silas Krauss · Material de trabalho, não aconselhamento jurídico definitivo</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const state={files:[],records:[],interviews:[]};
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected','false'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.setAttribute('aria-selected','true');$(b.dataset.tab).classList.add('active');}));
+function renderFiles(){ $('fileList').innerHTML=state.files.map((f,i)=>`<div class="file"><span><b>${esc(f.name)}</b><br><small>${(f.size/1024).toFixed(1)} KB · ${esc(f.type||'tipo não identificado')}</small></span><button class="danger" data-rm="${i}">Remover</button></div>`).join('');$('fileCount').textContent=state.files.length?`${state.files.length} arquivo(s) selecionado(s)`:'Nenhum arquivo adicionado';document.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{state.files.splice(+b.dataset.rm,1);renderFiles();});}
+async function addFiles(list){for(const f of list){if(state.files.some(x=>x.name===f.name&&x.size===f.size))continue;const data=await new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(f)});state.files.push({name:f.name,size:f.size,type:f.type,lastModified:f.lastModified,data});}renderFiles();}
+$('fileInput').addEventListener('change',e=>addFiles(e.target.files));
+$('drop').addEventListener('dragover',e=>{e.preventDefault();$('drop').classList.add('drag')});
+$('drop').addEventListener('dragleave',()=>$('drop').classList.remove('drag'));
+$('drop').addEventListener('drop',e=>{e.preventDefault();$('drop').classList.remove('drag');addFiles(e.dataTransfer.files)});
+$('clearFiles').onclick=()=>{state.files=[];renderFiles()};
+function renderRecords(){ $('recordList').innerHTML=state.records.map((r,i)=>`<div class="card"><b>${esc(r.name)}</b> <span class="tag">${esc(r.cat)}</span><p>${esc(r.fact)}</p><p class="small">Data: ${esc(r.date||'não informada')} · Limitações: ${esc(r.need)}</p><button class="danger" data-delrec="${i}">Excluir registro</button></div>`).join('');document.querySelectorAll('[data-delrec]').forEach(b=>b.onclick=()=>{state.records.splice(+b.dataset.delrec,1);renderRecords();});}
+$('addRecord').onclick=()=>{if(!$('docName').value.trim())return alert('Informe a identificação do documento.');state.records.push({name:$('docName').value,cat:$('docCat').value,date:$('docDate').value,fact:$('docFact').value,need:$('docNeed').value});['docName','docDate','docFact','docNeed'].forEach(id=>$(id).value='');renderRecords();};
+$('addRow').onclick=()=>{const tr=document.createElement('tr');for(let i=0;i<6;i++){const td=document.createElement('td');td.contentEditable='true';td.textContent='Preencher';tr.appendChild(td)}$('evidence').tBodies[0].appendChild(tr);};
+function tableData(){return [...$('evidence').rows].map(r=>[...r.cells].map(c=>c.innerText));}
+function download(name,content,type){const a=document.createElement('a');const u=URL.createObjectURL(new Blob([content],{type}));a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1500);}
+$('csv').onclick=()=>{const csv=tableData().map(row=>row.map(x=>'"'+x.replace(/"/g,'""')+'"').join(';')).join('\r\n');download('quadro_de_provas.csv','\ufeff'+csv,'text/csv;charset=utf-8')};
+function renderInterviews(){$('interviews').innerHTML=state.interviews.map((x,i)=>`<div class="card"><b>${esc(x.topic)}</b> <span class="tag">${esc(x.source)}</span><p><b>Pergunta:</b> ${esc(x.q)}</p><p><b>Resposta:</b> ${esc(x.a)}</p><p class="small">Confirmação: ${esc(x.c)}</p><button class="danger" data-delint="${i}">Excluir</button></div>`).join('');document.querySelectorAll('[data-delint]').forEach(b=>b.onclick=()=>{state.interviews.splice(+b.dataset.delint,1);renderInterviews();});}
+$('addInterview').onclick=()=>{if(!$('question').value.trim()&&!$('answer').value.trim())return alert('Preencha a pergunta ou a resposta.');state.interviews.push({topic:$('topic').value,source:$('source').value,q:$('question').value,a:$('answer').value,c:$('corroboration').value});['question','answer','corroboration'].forEach(id=>$(id).value='');renderInterviews();};
+$('copyDraft').onclick=async()=>{await navigator.clipboard.writeText($('draft').value);alert('Texto copiado.')};
+function snapshot(withFiles=true){const fields=['meetingNotes','clientVersion','admitted','disputed','proofs','requests','legalRequests','draft'];return {version:1,caseId:'1011701-70.2026.8.13.0525/MG',client:'Glaucio Aurelio Adami',preparedFor:'Silas Krauss',savedAt:new Date().toISOString(),files:withFiles?state.files:state.files.map(({name,size,type,lastModified})=>({name,size,type,lastModified})),records:state.records,interviews:state.interviews,table:tableData(),fields:Object.fromEntries(fields.map(k=>[k,$(k).value])),checks:[...$('checks').querySelectorAll('input')].map(x=>x.checked)};}
+$('exportProject').onclick=()=>download('painel_defesa_glaucio_projeto.json',JSON.stringify(snapshot(true)), 'application/json');
+$('exportNoFiles').onclick=()=>download('painel_defesa_glaucio_notas.json',JSON.stringify(snapshot(false)), 'application/json');
+$('importProject').onchange=async e=>{try{const obj=JSON.parse(await e.target.files[0].text());state.files=obj.files||[];state.records=obj.records||[];state.interviews=obj.interviews||[];renderFiles();renderRecords();renderInterviews();if(obj.table){const body=$('evidence').tBodies[0];body.innerHTML='';obj.table.slice(1).forEach(row=>{const tr=body.insertRow();row.forEach(v=>{const td=tr.insertCell();td.contentEditable='true';td.textContent=v;});});}Object.entries(obj.fields||{}).forEach(([k,v])=>{if($(k))$(k).value=v});(obj.checks||[]).forEach((v,i)=>{const el=$('checks').querySelectorAll('input')[i];if(el)el.checked=v});$('saveStatus').textContent='Projeto importado. Confira os dados e os arquivos.';}catch(err){alert('Não foi possível importar esse projeto JSON.');}e.target.value='';};
+</script>
+</body></html>
